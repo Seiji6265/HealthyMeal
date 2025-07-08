@@ -10,7 +10,7 @@ jobs:
   test:
     runs-on: windows-latest
     name: Build and Test
-    timeout-minutes: 10
+    timeout-minutes: 3
 
     steps:
       - name: Checkout code
@@ -42,8 +42,8 @@ jobs:
         run: dotnet build "HealthyMeal.Tests/HealthyMeal.Tests.csproj" --no-restore --configuration Release
 
       - name: Run unit tests
-        timeout-minutes: 5
         run: dotnet test "HealthyMeal.Tests/HealthyMeal.Tests.csproj" --no-build --configuration Release --verbosity normal --logger "console;verbosity=detailed"
+        timeout-minutes: 2
 
   build-release:
     needs: test
@@ -65,13 +65,13 @@ jobs:
 
       - name: Publish application
         run: |
-          dotnet publish "HealthyMeal.csproj" `
-            --configuration Release `
-            --runtime win-x64 `
-            --self-contained true `
-            --output "./publish/release" `
-            -p:PublishSingleFile=true `
-            -p:IncludeNativeLibrariesForSelfExtract=true `
+          dotnet publish "HealthyMeal.csproj" \
+            --configuration Release \
+            --runtime win-x64 \
+            --self-contained true \
+            --output "./publish/release" \
+            -p:PublishSingleFile=true \
+            -p:IncludeNativeLibrariesForSelfExtract=true \
             -p:PublishTrimmed=false
 
       - name: Create release artifact
@@ -82,7 +82,7 @@ jobs:
           retention-days: 30
 
   code-quality:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     name: Code Quality Analysis
 
     steps:
