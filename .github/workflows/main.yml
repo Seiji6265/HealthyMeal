@@ -44,14 +44,14 @@ jobs:
         run: dotnet test "HealthyMeal.Tests/HealthyMeal.Tests.csproj" --no-build --configuration Release --verbosity normal --collect:"XPlat Code Coverage"
 
       - name: Upload test results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: test-results
           path: "**/TestResults/**/*.trx"
 
       - name: Upload code coverage
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: code-coverage
@@ -87,7 +87,7 @@ jobs:
             -p:PublishTrimmed=false
 
       - name: Create release artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: healthymeal-release
           path: "./publish/release/"
