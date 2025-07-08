@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="68ee5b5a-c272-4a48-b7a1-cbd65abf7dab" name="Hard-PC@DESKTOP-QTB7TOE 2025-07-08 18:34:16" runUser="DESKTOP-QTB7TOE\Hard-PC" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-07-08T18:34:16.2678285+02:00" queuing="2025-07-08T18:34:16.2678288+02:00" start="2025-07-08T18:34:14.8436129+02:00" finish="2025-07-08T18:34:17.8656085+02:00" />
+  <TestSettings name="default" id="e6ae9715-fa2f-44f9-9e3d-0f5052962c09">
+    <Deployment runDeploymentRoot="Hard-PC_DESKTOP-QTB7TOE_2025-07-08_18_34_16" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="f5976652-471a-4b73-8c17-8294da38f9d0" testId="c39c173e-3a15-9c90-ce19-721771be1729" testName="Constructor_ShouldNotThrow" computerName="DESKTOP-QTB7TOE" duration="00:00:00.4134360" startTime="2025-07-08T18:34:15.7525018+02:00" endTime="2025-07-08T18:34:16.1659378+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f5976652-471a-4b73-8c17-8294da38f9d0" />
+    <UnitTestResult executionId="17b30137-cd30-433f-9632-a8071c820686" testId="8af8e827-f661-bd6a-480a-9cfad7de625c" testName="HashPassword_SamePlaintext_ShouldProduceDifferentHashes" computerName="DESKTOP-QTB7TOE" duration="00:00:00.5460010" startTime="2025-07-08T18:34:16.2289325+02:00" endTime="2025-07-08T18:34:16.7749326+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="17b30137-cd30-433f-9632-a8071c820686" />
+    <UnitTestResult executionId="97a9d423-8757-4f21-97fc-86dcf1e189b6" testId="99438c41-36b8-e528-65ef-8608294e1bf4" testName="EntityBase_InheritedClasses_ShouldHaveIdProperty" computerName="DESKTOP-QTB7TOE" duration="00:00:00.0001470" startTime="2025-07-08T18:34:15.7510061+02:00" endTime="2025-07-08T18:34:15.7511530+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="97a9d423-8757-4f21-97fc-86dcf1e189b6" />
+    <UnitTestResult executionId="b2254c3b-20c4-4957-a88a-9e1a500144bf" testId="e701c407-bacc-7600-f415-fd4a054f12c9" testName="HashPassword_ShouldReturnValidHash" computerName="DESKTOP-QTB7TOE" duration="00:00:00.0995670" startTime="2025-07-08T18:34:16.7749766+02:00" endTime="2025-07-08T18:34:16.8745433+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b2254c3b-20c4-4957-a88a-9e1a500144bf" />
+    <UnitTestResult executionId="8362111d-5b2a-40d4-b744-07bbadf40f31" testId="3274e5b3-a93b-3e85-9cdd-5f28302115c7" testName="EntityBase_InheritedClasses_ShouldBeTypeOfEntityBase" computerName="DESKTOP-QTB7TOE" duration="00:00:00.0028730" startTime="2025-07-08T18:34:15.7481131+02:00" endTime="2025-07-08T18:34:15.7509861+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8362111d-5b2a-40d4-b744-07bbadf40f31" />
+    <UnitTestResult executionId="7d9c462a-a055-4204-b98e-dcd122cda8dd" testId="88971990-910e-9557-5ce8-e62096c68b9f" testName="NavigateTo_WithInvalidViewName_ShouldThrowArgumentException" computerName="DESKTOP-QTB7TOE" duration="00:00:00.0024740" startTime="2025-07-08T18:34:16.2262280+02:00" endTime="2025-07-08T18:34:16.2287019+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d9c462a-a055-4204-b98e-dcd122cda8dd" />
+    <UnitTestResult executionId="c7e03d03-8b0f-4f3c-8f28-f77e1e067bca" testId="84ee6866-9446-8c39-993c-81171f64abcc" testName="VerifyPassword_WithEmptyPassword_ShouldReturnFalse" computerName="DESKTOP-QTB7TOE" duration="00:00:00.1982490" startTime="2025-07-08T18:34:17.1667117+02:00" endTime="2025-07-08T18:34:17.3649603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c7e03d03-8b0f-4f3c-8f28-f77e1e067bca" />
+    <UnitTestResult executionId="574836b5-c102-4dde-9a23-1071267d2429" testId="6f217c0c-334d-b6cf-bde0-6282eda46a63" testName="VerifyPassword_WithCorrectPassword_ShouldReturnTrue" computerName="DESKTOP-QTB7TOE" duration="00:00:00.1949340" startTime="2025-07-08T18:34:16.9717472+02:00" endTime="2025-07-08T18:34:17.1666809+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="574836b5-c102-4dde-9a23-1071267d2429" />
+    <UnitTestResult executionId="5bb56f0c-3f25-4782-801e-daed28ef8f5a" testId="f791ea03-7fbc-5b38-9a87-61986767a1fe" testName="VerifyPassword_WithNullHash_ShouldReturnFalse" computerName="DESKTOP-QTB7TOE" duration="00:00:00.0001200" startTime="2025-07-08T18:34:17.5627088+02:00" endTime="2025-07-08T18:34:17.5628285+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5bb56f0c-3f25-4782-801e-daed28ef8f5a" />
+    <UnitTestResult executionId="49774227-3e21-4330-8e3a-afb41d90179d" testId="c1be2e8f-29e0-f13c-71cf-52af77e7ff1d" testName="HashPassword_WithEmptyPassword_ShouldReturnHash" computerName="DESKTOP-QTB7TOE" duration="00:00:00.0971350" startTime="2025-07-08T18:34:16.8745795+02:00" endTime="2025-07-08T18:34:16.9717141+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="49774227-3e21-4330-8e3a-afb41d90179d" />
+    <UnitTestResult executionId="6ed1fd60-f8f5-463d-8e80-0a6bc23f475c" testId="3f42bc9e-0546-0e1d-3aa7-9a049364deaf" testName="Constructor_ShouldNotThrow" computerName="DESKTOP-QTB7TOE" duration="00:00:00.0117090" startTime="2025-07-08T18:34:16.2144918+02:00" endTime="2025-07-08T18:34:16.2261997+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6ed1fd60-f8f5-463d-8e80-0a6bc23f475c" />
+    <UnitTestResult executionId="5ad82a8b-a6ff-4245-93fd-50b1a2b01ad2" testId="2a874398-471d-7721-9ff2-7b77b2b43a7d" testName="EntityBase_DefaultId_ShouldBeZero" computerName="DESKTOP-QTB7TOE" duration="00:00:00.0058150" startTime="2025-07-08T18:34:15.7413428+02:00" endTime="2025-07-08T18:34:15.7471082+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5ad82a8b-a6ff-4245-93fd-50b1a2b01ad2" />
+    <UnitTestResult executionId="34869000-9fbf-4bf1-bd69-150a7adefb76" testId="91b9e4af-a499-61f6-d70f-4c9e2338bd6c" testName="LoginAsync_WithValidCredentials_ShouldReturnUser" computerName="DESKTOP-QTB7TOE" duration="00:00:00.0234590" startTime="2025-07-08T18:34:16.1659699+02:00" endTime="2025-07-08T18:34:16.1894280+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34869000-9fbf-4bf1-bd69-150a7adefb76" />
+    <UnitTestResult executionId="52ab8464-6912-46bf-9f1c-1cd44a93eae8" testId="165c93cb-8ad4-4774-b7be-0c7e60e6b037" testName="EntityBase_ShouldHaveIdProperty" computerName="DESKTOP-QTB7TOE" duration="00:00:00.0000520" startTime="2025-07-08T18:34:15.7511593+02:00" endTime="2025-07-08T18:34:15.7512108+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52ab8464-6912-46bf-9f1c-1cd44a93eae8" />
+    <UnitTestResult executionId="416ad717-35f5-49b3-b182-a8b398d0d3ac" testId="330441e5-0d9e-d87f-680d-52ab4956df3d" testName="NavigationService_HasViewTypes_ShouldInitializeCorrectly" computerName="DESKTOP-QTB7TOE" duration="00:00:00.0001230" startTime="2025-07-08T18:34:16.2287244+02:00" endTime="2025-07-08T18:34:16.2288475+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="416ad717-35f5-49b3-b182-a8b398d0d3ac" />
+    <UnitTestResult executionId="d5d307dc-874f-46d9-a50b-9a5b80234879" testId="9f0f6af0-43ad-c782-c8aa-ec04f1428cc5" testName="VerifyPassword_WithIncorrectPassword_ShouldReturnFalse" computerName="DESKTOP-QTB7TOE" duration="00:00:00.1976910" startTime="2025-07-08T18:34:17.3649884+02:00" endTime="2025-07-08T18:34:17.5626790+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d5d307dc-874f-46d9-a50b-9a5b80234879" />
+    <UnitTestResult executionId="907e1311-e273-4a3c-a67b-f985b5438179" testId="b43fffcd-10d1-426e-8b7b-0854be48a534" testName="RegisterAsync_WithValidData_ShouldReturnProfile" computerName="DESKTOP-QTB7TOE" duration="00:00:00.0248620" startTime="2025-07-08T18:34:16.1894564+02:00" endTime="2025-07-08T18:34:16.2143171+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="907e1311-e273-4a3c-a67b-f985b5438179" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="VerifyPassword_WithIncorrectPassword_ShouldReturnFalse" storage="c:\users\hard-pc\documents\healthymeal\healthymeal.tests\bin\debug\net8.0-windows\healthymeal.tests.dll" id="9f0f6af0-43ad-c782-c8aa-ec04f1428cc5">
+      <Execution id="d5d307dc-874f-46d9-a50b-9a5b80234879" />
+      <TestMethod codeBase="C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="HealthyMeal.Tests.Services.PasswordHasherServiceTests" name="VerifyPassword_WithIncorrectPassword_ShouldReturnFalse" />
+    </UnitTest>
+    <UnitTest name="RegisterAsync_WithValidData_ShouldReturnProfile" storage="c:\users\hard-pc\documents\healthymeal\healthymeal.tests\bin\debug\net8.0-windows\healthymeal.tests.dll" id="b43fffcd-10d1-426e-8b7b-0854be48a534">
+      <Execution id="907e1311-e273-4a3c-a67b-f985b5438179" />
+      <TestMethod codeBase="C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="HealthyMeal.Tests.Services.AuthServiceTests" name="RegisterAsync_WithValidData_ShouldReturnProfile" />
+    </UnitTest>
+    <UnitTest name="EntityBase_InheritedClasses_ShouldHaveIdProperty" storage="c:\users\hard-pc\documents\healthymeal\healthymeal.tests\bin\debug\net8.0-windows\healthymeal.tests.dll" id="99438c41-36b8-e528-65ef-8608294e1bf4">
+      <Execution id="97a9d423-8757-4f21-97fc-86dcf1e189b6" />
+      <TestMethod codeBase="C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="HealthyMeal.Tests.Models.EntityBaseTests" name="EntityBase_InheritedClasses_ShouldHaveIdProperty" />
+    </UnitTest>
+    <UnitTest name="NavigationService_HasViewTypes_ShouldInitializeCorrectly" storage="c:\users\hard-pc\documents\healthymeal\healthymeal.tests\bin\debug\net8.0-windows\healthymeal.tests.dll" id="330441e5-0d9e-d87f-680d-52ab4956df3d">
+      <Execution id="416ad717-35f5-49b3-b182-a8b398d0d3ac" />
+      <TestMethod codeBase="C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="HealthyMeal.Tests.Services.NavigationServiceTests" name="NavigationService_HasViewTypes_ShouldInitializeCorrectly" />
+    </UnitTest>
+    <UnitTest name="Constructor_ShouldNotThrow" storage="c:\users\hard-pc\documents\healthymeal\healthymeal.tests\bin\debug\net8.0-windows\healthymeal.tests.dll" id="3f42bc9e-0546-0e1d-3aa7-9a049364deaf">
+      <Execution id="6ed1fd60-f8f5-463d-8e80-0a6bc23f475c" />
+      <TestMethod codeBase="C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="HealthyMeal.Tests.Services.NavigationServiceTests" name="Constructor_ShouldNotThrow" />
+    </UnitTest>
+    <UnitTest name="LoginAsync_WithValidCredentials_ShouldReturnUser" storage="c:\users\hard-pc\documents\healthymeal\healthymeal.tests\bin\debug\net8.0-windows\healthymeal.tests.dll" id="91b9e4af-a499-61f6-d70f-4c9e2338bd6c">
+      <Execution id="34869000-9fbf-4bf1-bd69-150a7adefb76" />
+      <TestMethod codeBase="C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="HealthyMeal.Tests.Services.AuthServiceTests" name="LoginAsync_WithValidCredentials_ShouldReturnUser" />
+    </UnitTest>
+    <UnitTest name="HashPassword_ShouldReturnValidHash" storage="c:\users\hard-pc\documents\healthymeal\healthymeal.tests\bin\debug\net8.0-windows\healthymeal.tests.dll" id="e701c407-bacc-7600-f415-fd4a054f12c9">
+      <Execution id="b2254c3b-20c4-4957-a88a-9e1a500144bf" />
+      <TestMethod codeBase="C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="HealthyMeal.Tests.Services.PasswordHasherServiceTests" name="HashPassword_ShouldReturnValidHash" />
+    </UnitTest>
+    <UnitTest name="VerifyPassword_WithNullHash_ShouldReturnFalse" storage="c:\users\hard-pc\documents\healthymeal\healthymeal.tests\bin\debug\net8.0-windows\healthymeal.tests.dll" id="f791ea03-7fbc-5b38-9a87-61986767a1fe">
+      <Execution id="5bb56f0c-3f25-4782-801e-daed28ef8f5a" />
+      <TestMethod codeBase="C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="HealthyMeal.Tests.Services.PasswordHasherServiceTests" name="VerifyPassword_WithNullHash_ShouldReturnFalse" />
+    </UnitTest>
+    <UnitTest name="EntityBase_InheritedClasses_ShouldBeTypeOfEntityBase" storage="c:\users\hard-pc\documents\healthymeal\healthymeal.tests\bin\debug\net8.0-windows\healthymeal.tests.dll" id="3274e5b3-a93b-3e85-9cdd-5f28302115c7">
+      <Execution id="8362111d-5b2a-40d4-b744-07bbadf40f31" />
+      <TestMethod codeBase="C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="HealthyMeal.Tests.Models.EntityBaseTests" name="EntityBase_InheritedClasses_ShouldBeTypeOfEntityBase" />
+    </UnitTest>
+    <UnitTest name="Constructor_ShouldNotThrow" storage="c:\users\hard-pc\documents\healthymeal\healthymeal.tests\bin\debug\net8.0-windows\healthymeal.tests.dll" id="c39c173e-3a15-9c90-ce19-721771be1729">
+      <Execution id="f5976652-471a-4b73-8c17-8294da38f9d0" />
+      <TestMethod codeBase="C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="HealthyMeal.Tests.Services.AuthServiceTests" name="Constructor_ShouldNotThrow" />
+    </UnitTest>
+    <UnitTest name="HashPassword_WithEmptyPassword_ShouldReturnHash" storage="c:\users\hard-pc\documents\healthymeal\healthymeal.tests\bin\debug\net8.0-windows\healthymeal.tests.dll" id="c1be2e8f-29e0-f13c-71cf-52af77e7ff1d">
+      <Execution id="49774227-3e21-4330-8e3a-afb41d90179d" />
+      <TestMethod codeBase="C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="HealthyMeal.Tests.Services.PasswordHasherServiceTests" name="HashPassword_WithEmptyPassword_ShouldReturnHash" />
+    </UnitTest>
+    <UnitTest name="EntityBase_ShouldHaveIdProperty" storage="c:\users\hard-pc\documents\healthymeal\healthymeal.tests\bin\debug\net8.0-windows\healthymeal.tests.dll" id="165c93cb-8ad4-4774-b7be-0c7e60e6b037">
+      <Execution id="52ab8464-6912-46bf-9f1c-1cd44a93eae8" />
+      <TestMethod codeBase="C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="HealthyMeal.Tests.Models.EntityBaseTests" name="EntityBase_ShouldHaveIdProperty" />
+    </UnitTest>
+    <UnitTest name="VerifyPassword_WithCorrectPassword_ShouldReturnTrue" storage="c:\users\hard-pc\documents\healthymeal\healthymeal.tests\bin\debug\net8.0-windows\healthymeal.tests.dll" id="6f217c0c-334d-b6cf-bde0-6282eda46a63">
+      <Execution id="574836b5-c102-4dde-9a23-1071267d2429" />
+      <TestMethod codeBase="C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="HealthyMeal.Tests.Services.PasswordHasherServiceTests" name="VerifyPassword_WithCorrectPassword_ShouldReturnTrue" />
+    </UnitTest>
+    <UnitTest name="NavigateTo_WithInvalidViewName_ShouldThrowArgumentException" storage="c:\users\hard-pc\documents\healthymeal\healthymeal.tests\bin\debug\net8.0-windows\healthymeal.tests.dll" id="88971990-910e-9557-5ce8-e62096c68b9f">
+      <Execution id="7d9c462a-a055-4204-b98e-dcd122cda8dd" />
+      <TestMethod codeBase="C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="HealthyMeal.Tests.Services.NavigationServiceTests" name="NavigateTo_WithInvalidViewName_ShouldThrowArgumentException" />
+    </UnitTest>
+    <UnitTest name="VerifyPassword_WithEmptyPassword_ShouldReturnFalse" storage="c:\users\hard-pc\documents\healthymeal\healthymeal.tests\bin\debug\net8.0-windows\healthymeal.tests.dll" id="84ee6866-9446-8c39-993c-81171f64abcc">
+      <Execution id="c7e03d03-8b0f-4f3c-8f28-f77e1e067bca" />
+      <TestMethod codeBase="C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="HealthyMeal.Tests.Services.PasswordHasherServiceTests" name="VerifyPassword_WithEmptyPassword_ShouldReturnFalse" />
+    </UnitTest>
+    <UnitTest name="EntityBase_DefaultId_ShouldBeZero" storage="c:\users\hard-pc\documents\healthymeal\healthymeal.tests\bin\debug\net8.0-windows\healthymeal.tests.dll" id="2a874398-471d-7721-9ff2-7b77b2b43a7d">
+      <Execution id="5ad82a8b-a6ff-4245-93fd-50b1a2b01ad2" />
+      <TestMethod codeBase="C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="HealthyMeal.Tests.Models.EntityBaseTests" name="EntityBase_DefaultId_ShouldBeZero" />
+    </UnitTest>
+    <UnitTest name="HashPassword_SamePlaintext_ShouldProduceDifferentHashes" storage="c:\users\hard-pc\documents\healthymeal\healthymeal.tests\bin\debug\net8.0-windows\healthymeal.tests.dll" id="8af8e827-f661-bd6a-480a-9cfad7de625c">
+      <Execution id="17b30137-cd30-433f-9632-a8071c820686" />
+      <TestMethod codeBase="C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="HealthyMeal.Tests.Services.PasswordHasherServiceTests" name="HashPassword_SamePlaintext_ShouldProduceDifferentHashes" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="c39c173e-3a15-9c90-ce19-721771be1729" executionId="f5976652-471a-4b73-8c17-8294da38f9d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8af8e827-f661-bd6a-480a-9cfad7de625c" executionId="17b30137-cd30-433f-9632-a8071c820686" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="99438c41-36b8-e528-65ef-8608294e1bf4" executionId="97a9d423-8757-4f21-97fc-86dcf1e189b6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e701c407-bacc-7600-f415-fd4a054f12c9" executionId="b2254c3b-20c4-4957-a88a-9e1a500144bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3274e5b3-a93b-3e85-9cdd-5f28302115c7" executionId="8362111d-5b2a-40d4-b744-07bbadf40f31" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="88971990-910e-9557-5ce8-e62096c68b9f" executionId="7d9c462a-a055-4204-b98e-dcd122cda8dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="84ee6866-9446-8c39-993c-81171f64abcc" executionId="c7e03d03-8b0f-4f3c-8f28-f77e1e067bca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6f217c0c-334d-b6cf-bde0-6282eda46a63" executionId="574836b5-c102-4dde-9a23-1071267d2429" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f791ea03-7fbc-5b38-9a87-61986767a1fe" executionId="5bb56f0c-3f25-4782-801e-daed28ef8f5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c1be2e8f-29e0-f13c-71cf-52af77e7ff1d" executionId="49774227-3e21-4330-8e3a-afb41d90179d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3f42bc9e-0546-0e1d-3aa7-9a049364deaf" executionId="6ed1fd60-f8f5-463d-8e80-0a6bc23f475c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a874398-471d-7721-9ff2-7b77b2b43a7d" executionId="5ad82a8b-a6ff-4245-93fd-50b1a2b01ad2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="91b9e4af-a499-61f6-d70f-4c9e2338bd6c" executionId="34869000-9fbf-4bf1-bd69-150a7adefb76" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="165c93cb-8ad4-4774-b7be-0c7e60e6b037" executionId="52ab8464-6912-46bf-9f1c-1cd44a93eae8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="330441e5-0d9e-d87f-680d-52ab4956df3d" executionId="416ad717-35f5-49b3-b182-a8b398d0d3ac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9f0f6af0-43ad-c782-c8aa-ec04f1428cc5" executionId="d5d307dc-874f-46d9-a50b-9a5b80234879" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b43fffcd-10d1-426e-8b7b-0854be48a534" executionId="907e1311-e273-4a3c-a67b-f985b5438179" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Wyniki, których nie ma na liście" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Wszystkie załadowane wyniki" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="17" executed="17" passed="17" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.5.0.0: Test execution started&#xD;
+Running all tests in C:\Users\Hard-PC\Documents\HealthyMeal\HealthyMeal.Tests\bin\Debug\net8.0-windows\HealthyMeal.Tests.dll&#xD;
+   NUnit3TestExecutor discovered 17 of 17 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+NUnit Adapter 4.5.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <CollectorDataEntries>
+      <Collector agentName="DESKTOP-QTB7TOE" uri="datacollector://microsoft/CoverletCodeCoverage/1.0" collectorDisplayName="XPlat code coverage">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="DESKTOP-QTB7TOE\coverage.cobertura.xml"></A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+</TestRun>
