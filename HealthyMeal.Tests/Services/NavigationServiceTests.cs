@@ -24,8 +24,8 @@ namespace HealthyMeal.Tests.Services
             var exception = Record.Exception(() => new NavigationService(_mockServiceProvider.Object));
             Assert.Null(exception);
         }
-        // add skip
-        [Fact(Skip = "Requires WPF UI components - not supported in GitHub Actions")
+
+        [Fact(Skip = "Requires WPF UI components")]
         public void NavigateTo_WithInvalidViewName_ShouldThrowArgumentException()
         {
             // Arrange
