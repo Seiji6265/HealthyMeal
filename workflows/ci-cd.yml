@@ -28,20 +28,20 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nuget-
 
-           - name: Restore dependencies
-       run: dotnet restore "HealthyMeal.csproj"
-       
-     - name: Restore test dependencies
-       run: dotnet restore "HealthyMeal.Tests/HealthyMeal.Tests.csproj"
-       
-     - name: Build main project
-       run: dotnet build "HealthyMeal.csproj" --no-restore --configuration Release
-       
-     - name: Build test project
-       run: dotnet build "HealthyMeal.Tests/HealthyMeal.Tests.csproj" --no-restore --configuration Release
-       
-     - name: Run unit tests
-       run: dotnet test "HealthyMeal.Tests/HealthyMeal.Tests.csproj" --no-build --configuration Release --verbosity normal --collect:"XPlat Code Coverage"
+      - name: Restore dependencies
+        run: dotnet restore "HealthyMeal.csproj"
+
+      - name: Restore test dependencies
+        run: dotnet restore "HealthyMeal.Tests/HealthyMeal.Tests.csproj"
+
+      - name: Build main project
+        run: dotnet build "HealthyMeal.csproj" --no-restore --configuration Release
+
+      - name: Build test project
+        run: dotnet build "HealthyMeal.Tests/HealthyMeal.Tests.csproj" --no-restore --configuration Release
+
+      - name: Run unit tests
+        run: dotnet test "HealthyMeal.Tests/HealthyMeal.Tests.csproj" --no-build --configuration Release --verbosity normal --collect:"XPlat Code Coverage"
 
       - name: Upload test results
         uses: actions/upload-artifact@v3
@@ -72,19 +72,19 @@ jobs:
         with:
           dotnet-version: "8.0.x"
 
-           - name: Restore dependencies
-       run: dotnet restore "HealthyMeal.csproj"
-       
-     - name: Publish application
-       run: |
-         dotnet publish "HealthyMeal.csproj" `
-           --configuration Release `
-           --runtime win-x64 `
-           --self-contained true `
-           --output "./publish/release" `
-           -p:PublishSingleFile=true `
-           -p:IncludeNativeLibrariesForSelfExtract=true `
-           -p:PublishTrimmed=false
+      - name: Restore dependencies
+        run: dotnet restore "HealthyMeal.csproj"
+
+      - name: Publish application
+        run: |
+          dotnet publish "HealthyMeal.csproj" `
+            --configuration Release `
+            --runtime win-x64 `
+            --self-contained true `
+            --output "./publish/release" `
+            -p:PublishSingleFile=true `
+            -p:IncludeNativeLibrariesForSelfExtract=true `
+            -p:PublishTrimmed=false
 
       - name: Create release artifact
         uses: actions/upload-artifact@v3
@@ -106,11 +106,11 @@ jobs:
         with:
           dotnet-version: "8.0.x"
 
-           - name: Restore dependencies
-       run: dotnet restore "HealthyMeal.csproj"
-       
-     - name: Run code analysis
-       run: dotnet build "HealthyMeal.csproj" --configuration Release --verbosity normal
-       
-     - name: Check for security vulnerabilities
-       run: dotnet list "HealthyMeal.csproj" package --vulnerable --include-transitive
+      - name: Restore dependencies
+        run: dotnet restore "HealthyMeal.csproj"
+
+      - name: Run code analysis
+        run: dotnet build "HealthyMeal.csproj" --configuration Release --verbosity normal
+
+      - name: Check for security vulnerabilities
+        run: dotnet list "HealthyMeal.csproj" package --vulnerable --include-transitive
