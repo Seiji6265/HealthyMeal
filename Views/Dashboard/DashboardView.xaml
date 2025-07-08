@@ -1,0 +1,80 @@
+<UserControl x:Class="HealthyMeal.Views.Dashboard.DashboardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:HealthyMeal.Views.Dashboard"
+             mc:Ignorable="d"
+             d:DesignHeight="450"
+             d:DesignWidth="800">
+        <Grid Margin="20">
+                <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0"
+                           Text="{Binding WelcomeMessage}"
+                           FontSize="28"
+                           FontWeight="Light"
+                           Margin="0,0,0,30"/>
+
+                <UniformGrid Grid.Row="1"
+                             Rows="2"
+                             Columns="2"
+                             HorizontalAlignment="Center"
+                             VerticalAlignment="Center">
+
+                        <!-- Cell 1: Generate Plan -->
+                        <StackPanel VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"
+                                        Margin="10">
+                                <TextBlock Text="Select number of days:"
+                                                Margin="0,0,0,5"/>
+                                <ComboBox ItemsSource="{Binding DayOptions}"
+                                          SelectedItem="{Binding SelectedNumberOfDays}"
+                                          MinWidth="100"
+                                          Margin="0,0,0,10"/>
+                                <Button MinWidth="140"
+                                                MinHeight="40">
+                                        <Button.Style>
+                                                <Style TargetType="Button">
+                                                        <Setter Property="Content"
+                                                                Value="Generate New Plan"/>
+                                                        <Setter Property="Command"
+                                                                Value="{Binding NavigateToGeneratePlanCommand}"/>
+                                                        <Style.Triggers>
+                                                                <DataTrigger Binding="{Binding IsGeneratingPlan}"
+                                                                             Value="True">
+                                                                        <Setter Property="Content"
+                                                                                Value="Generating Plan..."/>
+                                                                        <Setter Property="IsEnabled"
+                                                                                Value="False"/>
+                                                                </DataTrigger>
+                                                        </Style.Triggers>
+                                                </Style>
+                                        </Button.Style>
+                                </Button>
+                        </StackPanel>
+
+                        <!-- Cell 2: My Recipes -->
+                        <Button Content="My Recipes"
+                                Command="{Binding NavigateToMyRecipesCommand}"
+                                Margin="10"
+                                MinHeight="100"/>
+
+                        <!-- Cell 3: My Meal Plans -->
+                        <Button Content="My Meal Plans"
+                                Command="{Binding NavigateToMyMealPlansCommand}"
+                                IsEnabled="{Binding HasMealPlan}"
+                                Margin="10"
+                                MinHeight="100"/>
+
+                        <!-- Cell 4: My Profile -->
+                        <Button Content="My Profile"
+                                Command="{Binding NavigateToProfileCommand}"
+                                Margin="10"
+                                MinHeight="100"/>
+                </UniformGrid>
+        </Grid>
+</UserControl> 
