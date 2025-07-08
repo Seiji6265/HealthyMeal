@@ -1,0 +1,116 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: windows-latest
+    name: Build and Test
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Cache NuGet packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
+
+      - name: Restore dependencies
+        run: dotnet restore "HealthyMeal.csproj"
+
+      - name: Restore test dependencies
+        run: dotnet restore "HealthyMeal.Tests/HealthyMeal.Tests.csproj"
+
+      - name: Build main project
+        run: dotnet build "HealthyMeal.csproj" --no-restore --configuration Release
+
+      - name: Build test project
+        run: dotnet build "HealthyMeal.Tests/HealthyMeal.Tests.csproj" --no-restore --configuration Release
+
+      - name: Run unit tests
+        run: dotnet test "HealthyMeal.Tests/HealthyMeal.Tests.csproj" --no-build --configuration Release --verbosity normal --collect:"XPlat Code Coverage"
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: test-results
+          path: "**/TestResults/**/*.trx"
+
+      - name: Upload code coverage
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: code-coverage
+          path: "**/TestResults/**/*.xml"
+
+  build-release:
+    needs: test
+    runs-on: windows-latest
+    name: Build Release Package
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Restore dependencies
+        run: dotnet restore "HealthyMeal.csproj"
+
+      - name: Publish application
+        run: |
+          dotnet publish "HealthyMeal.csproj" `
+            --configuration Release `
+            --runtime win-x64 `
+            --self-contained true `
+            --output "./publish/release" `
+            -p:PublishSingleFile=true `
+            -p:IncludeNativeLibrariesForSelfExtract=true `
+            -p:PublishTrimmed=false
+
+      - name: Create release artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: healthymeal-release
+          path: "./publish/release/"
+          retention-days: 30
+
+  code-quality:
+    runs-on: windows-latest
+    name: Code Quality Analysis
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Restore dependencies
+        run: dotnet restore "HealthyMeal.csproj"
+
+      - name: Run code analysis
+        run: dotnet build "HealthyMeal.csproj" --configuration Release --verbosity normal
+
+      - name: Check for security vulnerabilities
+        run: dotnet list "HealthyMeal.csproj" package --vulnerable --include-transitive
