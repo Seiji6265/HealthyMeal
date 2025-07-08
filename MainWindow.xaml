@@ -1,0 +1,67 @@
+<Window x:Class="HealthyMeal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HealthyMeal"
+        xmlns:viewModels="clr-namespace:HealthyMeal.ViewModels"
+        xmlns:views_auth="clr-namespace:HealthyMeal.Views.Auth"
+        xmlns:views_dashboard="clr-namespace:HealthyMeal.Views.Dashboard"
+        xmlns:views_profile="clr-namespace:HealthyMeal.Views.Profile"
+        xmlns:views_recipes="clr-namespace:HealthyMeal.Views.Recipes"
+        mc:Ignorable="d"
+        Title="HealthyMeal Beta"
+        Height="720"
+        Width="1280"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type viewModels:RegisterViewModel}">
+            <views_auth:RegisterView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type viewModels:LoginViewModel}">
+            <views_auth:LoginView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type viewModels:DashboardViewModel}">
+            <views_dashboard:DashboardView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type viewModels:ProfileViewModel}">
+            <views_profile:ProfileView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type viewModels:RecipeListViewModel}">
+            <views_recipes:RecipeListView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type viewModels:RecipeDetailViewModel}">
+            <views_recipes:RecipeDetailView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type viewModels:RecipeEditorViewModel}">
+            <views_recipes:RecipeEditorView/>
+        </DataTemplate>
+    </Window.Resources>
+
+    <Grid Background="{DynamicResource PrimaryBackgroundBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Main Content -->
+        <ContentControl Grid.Row="0"
+                        x:Name="MainContentControl"/>
+
+        <!-- Status Bar with Copyright -->
+        <StatusBar Grid.Row="1">
+            <StatusBarItem>
+                <TextBlock Text="Created by Sebastian Soból - All rights reserved"
+                           FontSize="10"
+                           Margin="5,0"
+                           Foreground="{DynamicResource PrimaryTextBrush}"/>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window> 

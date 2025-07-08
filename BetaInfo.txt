@@ -1,0 +1,35 @@
+=====================================
+    HEALTHYMEAL - WERSJA BETA 1.0
+=====================================
+
+Dziękuję za testowanie aplikacji HealthyMeal!
+
+🚀 CO TO JEST:
+- Aplikacja do planowania posiłków z AI
+- Generowanie planów żywieniowych
+- Zarządzanie przepisami
+- Personalizowane preferencje dietetyczne
+
+⚠️ UWAGA - WERSJA BETA:
+- To jest wersja testowa - mogą występować błędy
+- Funkcjonalność AI jest wyłączona w tej wersji demo
+- Baza danych jest lokalna (SQLite)
+- Niektóre funkcje mogą być niestabilne
+
+📋 JAK TESTOWAĆ:
+1. Uruchom HealthyMeal.exe
+2. Zarejestruj nowe konto
+3. Wypełnij preferencje w profilu
+4. Sprawdź wszystkie sekcje aplikacji
+5. Zgłoś wszelkie błędy lub sugestie
+
+🐛 ZGŁASZANIE BŁĘDÓW:
+- Opisz dokładnie co robiłeś
+- Dołącz screenshot jeśli możliwe
+- Napisz jakie było oczekiwane zachowanie
+
+📧 KONTAKT:
+[Twój email/kontakt]
+
+Wersja: 1.0.0-beta
+Data: 2025-01-25 
